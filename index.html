@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Interactive rating component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Overpass:wght@100&display=swap');
+    * {
+      font-family: "Overpass", sans-serif;
+    }
+  </style>
+</head>
+<body class="h-screen box-border grid overflow-hidden w-full" style="background-color: hsl(216, 12%, 8%);">
+
+  <main class="rate-us relative w-72 h-72 m-auto md:w-96 md:h-96">
+
+    <div class="page1 bg-slate-800 p-5 md:p-10 h-72 md:h-96 overflow-hidden  m-auto rounded-2xl" style="background-color: hsl(213, 19%, 18%);">
+
+        <div class="feedBack">
+            <div class="p-3 bg-slate-700 w-fit rounded-full mb-3" style="background-color: hsl(213, 19%, 21%);"><img src="images/icon-star.svg"></div>
+            <h1 class="text-white text-xl md:text-2xl mb-3 font-bold">How did we do ?</h1>
+            <p class="md:text-sm text-xs text-neutral-400 ">Please let us know how we did with yuor support request. All feedback are appreciated to help us improve our offer!</p>
+        </div>
+
+        <div class="rating text-neutral-400 grid grid-cols-5 gap-4 md:gap-6">
+
+            <span class="text-sm md:text-base md:w-12 md:h-12 md:p-3 p-2 h-9 w-9 cursor-pointer  bg-slate-700 text-center rounded-full row-start-2 hover:opacity-90 active:opacity-80">1</span>
+            <span class="text-sm md:text-base  md:w-12 md:h-12 md:p-3 p-2 h-9 w-9  cursor-pointer  bg-slate-700 text-center rounded-full row-start-2 hover:opacity-90 active:opacity-80">2</span>
+            <span class="text-sm md:text-base  md:w-12 md:h-12 md:p-3 p-2 h-9 w-9  cursor-pointer bg-slate-700 text-center rounded-full row-start-2 hover:opacity-90 active:opacity-80">3</span> 
+            <span class="text-sm md:text-base  md:w-12 md:h-12 md:p-3 p-2 h-9 w-9  cursor-pointer bg-slate-700 text-center rounded-full row-start-2 hover:opacity-90 active:opacity-80">4</span>
+            <span class="text-sm md:text-base  md:w-12 md:h-12 md:p-3 p-2 h-9 w-9  cursor-pointer bg-slate-700 text-center rounded-full row-start-2 hover:opacity-90 active:opacity-80">5</span>
+
+        </div>
+
+        <button class="submit-rating font-bold text-white col-start-1 w-full p-2 md:p-3 md:mt-4 rounded-3xl mt-4 md:mt-8 row-start-3 text-sm md:text-base hover:opacity-90 active:opacity-80" style="background-color: hsl(25, 97%, 53%);">SUBMIT</button>
+
+      </div>
+
+
+      <div class="page2 bg-slate-800 p-8 md:p-12 mt-24 h-72 md:h-96 md:m-auto 
+      overflow-hidden rounded-2xl" style="background-color: hsl(213, 19%, 18%); transform: translate(339px, -384px); opacity: 0; transition: .9s;">
+
+        <div class="feedBack text-center grid gap-2 md:gap-4 ">
+
+          <div class="w-fit w-full mb-3 m-auto">
+            <img src="images/illustration-thank-you.svg" class="m-auto w-28 md:w-36 md:m-auto">
+          </div>
+
+          <div class="rated bg-slate-700 rounded-full px-6 w-fit m-auto text-xs md:font-bold md:text-sm p-2" style="color: hsl(25, 97%, 53%);">You selected x out of y</div>
+
+          <h1 class="text-white text-xl md:text-2xl md:font-bold">Thank you!</h1>
+
+          <p class="md:text-sm text-xs text-neutral-400">We appreciate you taking the time to give rating. If you ever need support, don't hesitate to get in touch!</p>
+
+        </div>
+
+      </div>
+
+      </main>
+      <script src="https://cdn.tailwindcss.com" defer></script>
+      <script src="design/src/main.js" defer></script>
+</body>
+</html>
